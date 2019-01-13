@@ -15,3 +15,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.jimu-widget-footer .footer-widget-organization{
+  max-width: 800px;
+  color:#d9dde0;
+  font-size: 16px;
+  text-align: center;
+  line-height: 22px;
+  margin-left: auto;
+  margin-right: auto;
+}
