@@ -6,6 +6,17 @@
     <div class="jimu-title jimu-float-leading" data-dojo-attach-point="titleNode"></div>
     <div class="jimu-subtitle jimu-float-leading jimu-leading-margin2" data-dojo-attach-point="subtitleNode"></div>
   </div>
+
+  <div class="dropdown jimu-float-trailing jimu-trailing-margin25">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+      Go To
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" data-dojo-attach-point="dropdownMenuNode">
+      <!-- menu items added dynamically -->
+    </ul>
+  </div>
+
   <div class="links jimu-float-trailing jimu-trailing-margin25" data-dojo-attach-point="linksNode">
     <span class="dynamic-section" data-dojo-attach-point="dynamicLinksNode"></span>
     <a class="link" href="#" data-dojo-attach-point="aboutNode" data-dojo-attach-event="onclick:_onAboutClick">${nls.about}</a>

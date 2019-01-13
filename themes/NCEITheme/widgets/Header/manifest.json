@@ -3,10 +3,10 @@
   "2D": true,
   "3D": true,
   "platform": "HTML",
-  "version": "2.11",
+  "version": "1.0.0",
   "wabVersion": "2.11",
-  "author": "Esri R&D Center Beijing",
-  "description": "",
+  "author": "John Cartwright",
+  "description": "derived from Header widget in Esri's TabTheme",
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0",
   "properties": {

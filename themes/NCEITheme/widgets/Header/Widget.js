@@ -27,6 +27,7 @@ define([
     'jimu/portalUtils',
     'jimu/utils',
     'jimu/dijit/Message',
+    'bootstrap/Dropdown',
     'dojo/NodeList-dom',
     'dojo/NodeList-manipulate'
   ],
@@ -75,8 +76,26 @@ define([
 
         this._setElementsSize();
         this.own(topic.subscribe('changeMapPosition', lang.hitch(this, this._onMapResize)));
+
+        this._addToNavMenu('NCEI', 'https://www.ncei.noaa.gov');
+        this._addToNavMenu('NOAA', 'https://www.noaa.gov');
       },
 
+      _addToNavMenu: function(label, url) {
+        //mimic the attributes from the Bootstrap dropdown demo
+        var menuItem = document.createElement('li');
+        menuItem.setAttribute('role','presentation');
+        var href = document.createElement('a');
+        var textNode = document.createTextNode(label);
+        href.setAttribute('href', url);
+        href.setAttribute('role','menuitem');
+        href.setAttribute('tabindex','-1');
+        href.setAttribute('target', '_blank');
+        href.appendChild(textNode);
+        menuItem.appendChild(href);
+        this.dropdownMenuNode.appendChild(menuItem);
+      },
+      
       startup: function() {
         this.inherited(arguments);
 
